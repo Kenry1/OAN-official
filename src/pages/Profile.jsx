@@ -153,7 +153,7 @@ function ProfileHero() {
   return (
     <section 
       ref={sectionRef}
-      className="relative text-white py-16 pt-32 overflow-hidden min-h-[70vh] flex items-end"
+      className="relative text-white py-16 pt-32 overflow-hidden min-h-[35vh] md:min-h-[70vh] flex items-end"
       style={{
         backgroundImage: "url('/c-profile2.png')",
         backgroundSize: 'cover',
