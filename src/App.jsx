@@ -5,11 +5,11 @@ import Profile from './pages/Profile'
 import Services from './pages/Services'
 import Sectors from './pages/Sectors'
 import ContactUs from './pages/ContactUs'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="App">
         <Routes>
           <Route path="/" element={<LandingPage />} />
@@ -17,8 +17,9 @@ export default function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/sectors" element={<Sectors />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="*" element={<LandingPage />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
