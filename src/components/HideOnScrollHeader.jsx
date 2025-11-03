@@ -9,6 +9,8 @@ function HideOnScrollHeader() {
   const lastY = React.useRef(0);
   const [locOpen, setLocOpen] = React.useState(false);
   const locRef = React.useRef(null);
+  const [menuOpen, setMenuOpen] = React.useState(false);
+  const menuRef = React.useRef(null);
 
   React.useEffect(() => {
     const onScroll = () => {
@@ -21,12 +23,11 @@ function HideOnScrollHeader() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  // close location dropdown when clicking outside
+  // close location dropdowns when clicking outside
   React.useEffect(() => {
     const onDocClick = (e) => {
-      if (locRef.current && !locRef.current.contains(e.target)) {
-        setLocOpen(false);
-      }
+      if (locRef.current && !locRef.current.contains(e.target)) setLocOpen(false);
+      if (menuRef.current && !menuRef.current.contains(e.target)) setMenuOpen(false);
     };
     document.addEventListener('click', onDocClick);
     return () => document.removeEventListener('click', onDocClick);
@@ -39,8 +40,26 @@ function HideOnScrollHeader() {
       }
     >
       <div className={`mx-auto px-6 py-4 flex items-center justify-between ${atTop ? 'bg-transparent' : 'bg-black/50 backdrop-blur'} text-white`}>
-          <div className="flex items-center gap-4">
-          <button aria-label="Menu" className="p-2 rounded hover:bg-white/10 text-white"><FaBars /></button>
+        <div className="flex items-center gap-4">
+          {/* Mobile menu button */}
+          <div ref={menuRef} className="relative md:hidden">
+            <button
+              aria-label="Menu"
+              className="p-2 rounded hover:bg-white/10 text-white"
+              onClick={() => setMenuOpen(o => !o)}
+              aria-expanded={menuOpen}
+            >
+              <FaBars />
+            </button>
+            {menuOpen && (
+              <div className="absolute left-0 mt-2 w-44 bg-white text-gray-900 rounded shadow-lg ring-1 ring-black/10 overflow-hidden">
+                <Link to="/services" className="block px-3 py-2 hover:bg-gray-50 text-sm" onClick={() => setMenuOpen(false)}>Services</Link>
+                <Link to="/sectors" className="block px-3 py-2 hover:bg-gray-50 text-sm" onClick={() => setMenuOpen(false)}>Sectors</Link>
+                <Link to="/profile" className="block px-3 py-2 hover:bg-gray-50 text-sm" onClick={() => setMenuOpen(false)}>Profile</Link>
+                <Link to="/contact-us" className="block px-3 py-2 hover:bg-gray-50 text-sm" onClick={() => setMenuOpen(false)}>Contact</Link>
+              </div>
+            )}
+          </div>
           <Link to="/">
             <img src="/ANA%20logo.jpg" alt="AAN logo" className="h-12 md:h-14 w-auto rounded-xl ring-2 ring-blue-500/60 drop-shadow-[14px_0_0_rgba(37,99,235,0.55)]" />
           </Link>
