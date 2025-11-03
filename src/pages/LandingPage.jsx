@@ -60,7 +60,7 @@ const LandingPage = () => {
  
   <div className="px-4 py-16 max-w-5xl mx-auto text-center">
 
-    <h2 className="text-4xl font-bold mb-6 tracking-tight">
+    <h2 className="text-4xl font-bold mb-6 tracking-tight text-teal-600">
       About Access Africa Networks
     </h2>
 
@@ -119,14 +119,14 @@ const LandingPage = () => {
       {/* Services Section */}
       <section id="services" className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Services</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-teal-600">Our Services</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100 hover:shadow-xl transition-all hover:-translate-y-1">
               <div className="flex items-center gap-3 mb-4">
                 <div className="h-10 w-10 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center">
                   <FaHandsHelping />
                 </div>
-                <h3 className="text-xl font-semibold">Pre-Investment Phase</h3>
+                <h3 className="text-xl font-semibold text-teal-700">Pre-Investment Phase</h3>
               </div>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-center gap-2"><FaCheckCircle className="text-green-500" /> Market Intelligence & Studies</li>
@@ -140,7 +140,7 @@ const LandingPage = () => {
                 <div className="h-10 w-10 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center">
                   <FaBalanceScale />
                 </div>
-                <h3 className="text-xl font-semibold">Investment Phase</h3>
+                <h3 className="text-xl font-semibold text-teal-700">Investment Phase</h3>
               </div>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-center gap-2"><FaCheckCircle className="text-green-500" /> Permits & Licensing</li>
@@ -154,7 +154,7 @@ const LandingPage = () => {
                 <div className="h-10 w-10 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center">
                   <FaIndustry />
                 </div>
-                <h3 className="text-xl font-semibold">Post-Investment</h3>
+                <h3 className="text-xl font-semibold text-teal-700">Post-Investment</h3>
               </div>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-center gap-2"><FaCheckCircle className="text-green-500" /> Community Management</li>
@@ -174,7 +174,7 @@ const LandingPage = () => {
   <section id="contact" className="pt-0 pb-0 bg-white">
         {/* Contact info cards */}
         <div className="container mx-auto px-4 py-12">
-          <h2 className="text-3xl font-bold text-center mb-10">Contact Us</h2>
+          <h2 className="text-3xl font-bold text-center mb-10 text-teal-600">Contact Us</h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             <div className="group bg-white rounded-xl shadow-sm border border-gray-100 p-6 hover:shadow-xl hover:-translate-y-1 transition-all">
               <div className="h-12 w-12 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center mb-4 animate-float">
@@ -304,7 +304,7 @@ function SectorsSlideshow() {
     {
       label: 'Telecom',
       icon: <FaGlobeAfrica className="text-4xl" />,
-      img: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1974&auto=format&fit=crop',
+      img: '/telecom.jpg',
       description: 'Fiber networks, tower infrastructure, and connectivity solutions across East Africa.',
       stats: { projects: 67, capacity: 5.2, capacityUnit: 'K km', countries: 15 }
     },
@@ -420,7 +420,7 @@ function SectorsSlideshow() {
   return (
     <section id="sectors" ref={sectionRef} className="py-20 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Key Sectors</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-teal-600">Key Sectors</h2>
         
         {/* Slideshow Container */}
         <div className="relative max-w-6xl mx-auto">

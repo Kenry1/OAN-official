@@ -103,20 +103,34 @@ function HideOnScrollHeader() {
 
           {locOpen && (
             <div className="absolute right-0 mt-2 w-52 bg-gray-100 text-gray-900 rounded-xl p-2 shadow-lg ring-1 ring-black/5 space-y-2">
-              <button
-                className="w-full flex items-center gap-3 p-3 rounded-lg border border-gray-200 bg-white hover:bg-gray-50 text-sm"
-                onClick={() => { /* placeholder action */ setLocOpen(false); }}
-              >
+              <Link to="/country/uganda" className="w-full flex items-center gap-3 p-3 rounded-lg border border-gray-200 bg-white hover:bg-gray-50 text-sm" onClick={() => setLocOpen(false)}>
                 <span className="w-6 h-6 rounded-full flex items-center justify-center">🇺🇬</span>
                 Uganda
-              </button>
-              <button
-                className="w-full flex items-center gap-3 p-3 rounded-lg border border-gray-200 bg-white hover:bg-gray-50 text-sm"
-                onClick={() => { /* placeholder action */ setLocOpen(false); }}
-              >
+              </Link>
+              <Link to="/country/zimbabwe" className="w-full flex items-center gap-3 p-3 rounded-lg border border-gray-200 bg-white hover:bg-gray-50 text-sm" onClick={() => setLocOpen(false)}>
                 <span className="w-6 h-6 rounded-full flex items-center justify-center">🇿🇼</span>
                 Zimbabwe
-              </button>
+              </Link>
+              <Link to="/country/rwanda" className="w-full flex items-center gap-3 p-3 rounded-lg border border-gray-200 bg-white hover:bg-gray-50 text-sm" onClick={() => setLocOpen(false)}>
+                <span className="w-6 h-6 rounded-full flex items-center justify-center">🇷🇼</span>
+                Rwanda
+              </Link>
+              <Link to="/country/malawi" className="w-full flex items-center gap-3 p-3 rounded-lg border border-gray-200 bg-white hover:bg-gray-50 text-sm" onClick={() => setLocOpen(false)}>
+                <span className="w-6 h-6 rounded-full flex items-center justify-center">🇲🇼</span>
+                Malawi
+              </Link>
+              <Link to="/country/zambia" className="w-full flex items-center gap-3 p-3 rounded-lg border border-gray-200 bg-white hover:bg-gray-50 text-sm" onClick={() => setLocOpen(false)}>
+                <span className="w-6 h-6 rounded-full flex items-center justify-center">🇿🇲</span>
+                Zambia
+              </Link>
+              <Link to="/country/nigeria" className="w-full flex items-center gap-3 p-3 rounded-lg border border-gray-200 bg-white hover:bg-gray-50 text-sm" onClick={() => setLocOpen(false)}>
+                <span className="w-6 h-6 rounded-full flex items-center justify-center">🇳🇬</span>
+                Nigeria
+              </Link>
+              <Link to="/country/ghana" className="w-full flex items-center gap-3 p-3 rounded-lg border border-gray-200 bg-white hover:bg-gray-50 text-sm" onClick={() => setLocOpen(false)}>
+                <span className="w-6 h-6 rounded-full flex items-center justify-center">🇬🇭</span>
+                Ghana
+              </Link>
             </div>
           )}
         </div>

@@ -260,7 +260,7 @@ export default function Profile() {
         <div id="management">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">Management</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* President - Jan Sanden */}
+            {/* Member of the Board - Jan Sandén */}
             <div className="rounded-xl border border-gray-100 p-6 shadow-sm bg-white hover:shadow-lg transition-shadow">
               <div className="flex items-start gap-4 mb-4">
                 <img 
@@ -270,7 +270,7 @@ export default function Profile() {
                 />
                 <div className="flex-1">
                   <h3 className="font-semibold text-lg text-black">Jan Sandén</h3>
-                  <p className="text-gray-500 text-sm mb-1">President</p>
+                  <p className="text-gray-500 text-sm mb-1">Member of the Board</p>
                   <p className="text-gray-400 text-xs italic">Ex-Ericsson</p>
                 </div>
               </div>
@@ -286,27 +286,31 @@ export default function Profile() {
                 <FaLinkedin className="text-lg" />
                 <span className="text-sm">LinkedIn</span>
               </a>
-            </div>
+              </div>
 
-            {/* CFO - Augustine Hiuhu */}
+            {/* VP-Technical Sales - Geoffrey Kirumba */}
             <div className="rounded-xl border border-gray-100 p-6 shadow-sm bg-white hover:shadow-lg transition-shadow">
               <div className="flex items-start gap-4 mb-4">
                 <img 
-                  src="/cfo.jpeg" 
-                  alt="Augustine Hiuhu" 
+                  src="/sales.jpeg" 
+                  alt="Geoffrey Kirumba" 
                   className="w-20 h-20 rounded-full object-cover border-2 border-gray-100"
                 />
                 <div className="flex-1">
-                  <h3 className="font-semibold text-lg text-black">Augustine Hiuhu</h3>
-                  <p className="text-gray-500 text-sm mb-1">Chief Financial Officer</p>
-                  <p className="text-gray-400 text-xs italic">18yrs Experience, Ex-Ericsson Sub Saharan Africa & Middle East; BAT, Chase Group.</p>
+                  <h3 className="font-semibold text-lg text-black">Geoffrey Kirumba</h3>
+                  <p className="text-gray-500 text-sm mb-1">VP-Technical Sales</p>
+                  <p className="text-gray-400 text-xs italic">21 years' Experience, Ex-Ericsson Sub Saharan Africa; Safaricom</p>
                 </div>
               </div>
               <p className="text-gray-600 text-sm mb-4 leading-relaxed">
-                CPA(K) & Bcom (Finance & Accounting), extensive experience in financial planning, controlling, reporting, analysis, risk management and processes optimization. Other expertise also includes leading capital raising projects, treasury management and commercial contracts management.
+                Telecoms Projects Delivery Professional experienced in site build implementation services.
+                <br /><br />
+                Accountable for planning and managing the rollout of deployment activities for whole or part of a customer project, ensuring the project is delivered in scope of contractual obligations and within forecasted costs, time, and quality.
+                <br /><br />
+                Fttx Specialist and Planner. Jeosatt Solutions Founder
               </p>
               <a 
-                href="https://www.linkedin.com/in/augustine-hiuhu-9275355b" 
+                href="https://www.linkedin.com/in/geoffrey-kirumba-6a58248a" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors"
@@ -352,29 +356,25 @@ export default function Profile() {
               </a>
             </div>
 
-            {/* VP-Technical Sales - Geoffrey Kirumba */}
+            {/* CFO - Augustine Hiuhu */}
             <div className="rounded-xl border border-gray-100 p-6 shadow-sm bg-white hover:shadow-lg transition-shadow">
               <div className="flex items-start gap-4 mb-4">
                 <img 
-                  src="/sales.jpeg" 
-                  alt="Geoffrey Kirumba" 
+                  src="/cfo.jpeg" 
+                  alt="Augustine Hiuhu" 
                   className="w-20 h-20 rounded-full object-cover border-2 border-gray-100"
                 />
                 <div className="flex-1">
-                  <h3 className="font-semibold text-lg text-black">Geoffrey Kirumba</h3>
-                  <p className="text-gray-500 text-sm mb-1">VP-Technical Sales</p>
-                  <p className="text-gray-400 text-xs italic">21 years' Experience, Ex-Ericsson Sub Saharan Africa; Safaricom</p>
+                  <h3 className="font-semibold text-lg text-black">Augustine Hiuhu</h3>
+                  <p className="text-gray-500 text-sm mb-1">Chief Financial Officer</p>
+                  <p className="text-gray-400 text-xs italic">18yrs Experience, Ex-Ericsson Sub Saharan Africa & Middle East; BAT, Chase Group.</p>
                 </div>
               </div>
               <p className="text-gray-600 text-sm mb-4 leading-relaxed">
-                Telecoms Projects Delivery Professional experienced in site build implementation services.
-                <br /><br />
-                Accountable for planning and managing the rollout of deployment activities for whole or part of a customer project, ensuring the project is delivered in scope of contractual obligations and within forecasted costs, time, and quality.
-                <br /><br />
-                Fttx Specialist and Planner. Jeosatt Solutions Founder
+                CPA(K) & Bcom (Finance & Accounting), extensive experience in financial planning, controlling, reporting, analysis, risk management and processes optimization. Other expertise also includes leading capital raising projects, treasury management and commercial contracts management.
               </p>
               <a 
-                href="https://www.linkedin.com/in/geoffrey-kirumba-6a58248a" 
+                href="https://www.linkedin.com/in/augustine-hiuhu-9275355b" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors"
