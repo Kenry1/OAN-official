@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { FaLinkedin } from 'react-icons/fa';
+import { FaLinkedin, FaGlobe } from 'react-icons/fa';
 import HideOnScrollHeader from '../components/HideOnScrollHeader.jsx';
 import Footer from '../components/Footer';
 
@@ -409,6 +409,44 @@ export default function Profile() {
                 <FaLinkedin className="text-lg" />
                 <span className="text-sm">LinkedIn</span>
               </a>
+            </div>
+
+            {/* Consultant and Strategic Advisor - Dustin Burke */}
+            <div className="rounded-xl border border-gray-100 p-6 shadow-sm bg-white hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-4 mb-4">
+                <img 
+                  src="/dustin burke.jpeg" 
+                  alt="Dustin Burke" 
+                  className="w-20 h-20 rounded-full object-cover border-2 border-gray-100"
+                />
+                <div className="flex-1">
+                  <h3 className="font-semibold text-lg text-black">Dustin Burke</h3>
+                  <p className="text-gray-500 text-sm mb-1">Consultant and Strategic Advisor</p>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+                Dustin Burke is a connector who turns power and land into investor-grade outcomes. He links utilities, EPCs, OEMs, financiers, and landowners to form JVs that align clean energy (hydro, solar, gas, geothermal) with scalable data-center and modular-housing demand. With 20+ years across heavy civil, hydropower, real estate, and capital structuring, he sources sites, navigates interconnection/permitting, and mobilizes a vetted global network to move projects from feasibility to bankable execution.
+              </p>
+              <div className="flex items-center gap-4">
+                <a 
+                  href="https://dustinburke.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors"
+                >
+                  <FaGlobe className="text-lg" />
+                  <span className="text-sm">Website</span>
+                </a>
+                <a 
+                  href="https://www.linkedin.com/in/burkedustin/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors"
+                >
+                  <FaLinkedin className="text-lg" />
+                  <span className="text-sm">LinkedIn</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
