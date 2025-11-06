@@ -298,7 +298,7 @@ export default function Profile() {
                 />
                 <div className="flex-1">
                   <h3 className="font-semibold text-lg text-black">Geoffrey Kirumba</h3>
-                  <p className="text-gray-500 text-sm mb-1">VP-Technical Sales</p>
+                  <p className="text-gray-500 text-sm mb-1">Director - Technical Sales & Board Member</p>
                   <p className="text-gray-400 text-xs italic">21 years' Experience, Ex-Ericsson Sub Saharan Africa; Safaricom</p>
                 </div>
               </div>
@@ -336,7 +336,7 @@ export default function Profile() {
                 />
                 <div className="flex-1">
                   <h3 className="font-semibold text-lg text-black">Cosmas Mutuku</h3>
-                  <p className="text-gray-500 text-sm mb-1">VP-Business Development</p>
+                  <p className="text-gray-500 text-sm mb-1">Director - Business Development & Board Member</p>
                   <p className="text-gray-400 text-xs italic">25 years' Experience, Ex-Ericsson Sub Saharan Africa</p>
                 </div>
               </div>
